@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magyar Uralkodók Táblázata</title>
+
+</head>
+
+<body>
+
+    <h2>Uralkodó Hozzáadása</h2>
+
+    <form id="form" action="#">
+        <div class="field">
+            <div class="error">
+                <label for="uralkodo_nev">Uralkodó neve:</label><br>
+                <input type="text" id="uralkodo_nev" name="uralkodo_nev"><br><br>
+        
+                <label for="esemeny1">Első esemény:</label><br>
+                <input type="text" id="esemeny1" name="esemeny1"><br><br>
+        
+                <label for="evszam1">Első esemény évszáma:</label><br>
+                <input type="text" id="evszam1" name="evszam1"><br><br>
+        
+                <label for="esemeny2">Második esemény:</label><br>
+                <input type="text" id="esemeny2" name="esemeny2"><br><br>
+        
+                <label for="evszam2">Második esemény évszáma:</label><br>
+                <input type="text" id="evszam2" name="evszam2"><br><br>
+        
+                <button>Hozzáadás</button>
+                <button onclick="generateheader('Uralkodo', 'Esemény', 'Évszám'), generateTable()">Generálás</button>
+            </div>
+          
+        </div>
+       
+    </form>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
