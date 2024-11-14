@@ -1,34 +1,20 @@
 const tomb = [
        
     {
-        uralkodo_nevI : 'I.István',
-        esemeny_I1 : 'Koronázás',
-        evszam_I1 : '1000',
-        esemeny_I2 : 'Pannonhalmi apátság megalapítása',
-        evszam_I2 : '1001',
+        uralkodo_nev : 'I.István',
+        esemeny_I : 'Koronázás',
+        evszam_I : '1000',
     },
     {
         
-        uralkodo_nevB : 'IV.Béla',
-        uralkodo_nevM : 'Mátyás király',
-        uralkodo_nevF : 'II.Rákoczi Ferenc',
-   
-        esemeny_B : 'Tatájárás',
-        esemeny_M1 : 'Bélcs elfoglalása',
-        esemeny_M2 : 'Kenyérmezei csata',
-        esemeny_F1 : 'A szabadságharc kezdete',
-        esemeny_F2 : 'A szabadságharc vége',
+        uralkodo_nev : 'IV.Béla',
+        esemeny_I : 'Tatájárás',
+        evszam_I : '1241-1242',
     },
     {
-        
-       
-        evszam_B : '1241-1242',
-        evszam_M1 : '1485',
-        evszam_M2 : '1479',
-        evszam_F1 : '1703',
-        evszam_F2 : '1711',
-        
-        
+        uralkodo_nev : 'Mátyás király', 
+        esemeny_I : 'Bécs elfoglalása',
+        evszam_I : '1485',
     }
 ] 
     /*
@@ -65,16 +51,16 @@ function generateTable() {
     for(let i = 0; i < tomb.length; i++)
 {
     const sor = document.createElement('tr')
-    if(tomb[i].uralkodo_nevI)
+    if(tomb[i].uralkodo_nev)
     {
         const cella = document.createElement('td')
-        cella.innerHTML = tomb[i].uralkodo_nevI
+        cella.innerHTML = tomb[i].uralkodo_nev
         sor.appendChild(cella)
         const esemeny = document.createElement('td')
-        esemeny.innerHTML = tomb[i].esemeny_I1
+        esemeny.innerHTML = tomb[i].esemeny_I
         sor.appendChild(esemeny)
         const ev = document.createElement('td')
-        ev.innerHTML = tomb[i].evszam_I1
+        ev.innerHTML = tomb[i].evszam_I
         sor.appendChild(ev)
         tbody.appendChild(sor)
     }
